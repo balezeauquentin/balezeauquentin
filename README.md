@@ -3,7 +3,7 @@
 ###
 <h1 align="center">Hi 👋, I'm Quentin Balezeau</h1>
 
-- I’m currently gearing up for an engineering degree at [**UTBM**](https://www.utbm.fr/)
+- 🎓 I’m currently gearing up for an engineering degree at [**UTBM**](https://www.utbm.fr/)
 - 🔭 I’m currently working on [**My project**](https://github.com/balezeauquentin)
 - 🌱 I’m currently learning Computer Science 
 - 🤖 I’m currently immersing myself in the world of machine learning and artificial intelligence
