@@ -22,10 +22,10 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <h3 align="center" style="font-size: 21px;">Statistics</h3>
-<div style="display: flex; justify-content: space-around; align-items: center;">
-    <img align="center" width="41.5%" src="https://github-readme-streak-stats.herokuapp.com/?user=balezeauquentin&theme=codestackr" alt="GitHub Streak Stats" />
-    <img align="center" width="28.5%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=balezeauquentin&theme=2077" alt="GitHub Profile Stats" />
-    <img align="center" width="28.5%" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=balezeauquentin&theme=2077" alt="Most Used Languages" />
+<div align= "center";>
+    <img align="center" width="41%" src="https://github-readme-streak-stats.herokuapp.com/?user=balezeauquentin&theme=codestackr" alt="GitHub Streak Stats" />
+    <img align="center" width="28%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=balezeauquentin&theme=2077" alt="GitHub Profile Stats" />
+    <img align="center" width="28%" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=balezeauquentin&theme=2077" alt="Most Used Languages" />
 </div>
 
 
