@@ -1,4 +1,6 @@
-<img src="https://raw.githubusercontent.com/BEPb/BEPb/5c63fa170d1cbbb0b1974f05a3dbe6aca3f5b7f3/assets/Bottom_up.svg" width="100%" />
+<img src="https://raw.githubusercontent.com/balezeauquentin/balezeauquentin/output/snake.svg" alt="Snake animation" />
+
+###
 <h1 align="center">Hi 👋, I'm Quentin Balezeau</h1>
 
 - I’m currently gearing up for an engineering degree at [**UTBM**](https://www.utbm.fr/)
