@@ -1,4 +1,4 @@
-<img src="[https://github.com/balezeauquentin/balezeauquentin/output/snake.svg](https://github.com/balezeauquentin/balezeauquentin/blob/main/output/snake.svg)" alt="Snake animation" />
+<img src="https://github.com/balezeauquentin/balezeauquentin/blob/main/output/snake.svg" alt="Snake animation" />
 
 ###
 <h1 align="center">Hi 👋, I'm Quentin Balezeau</h1>
