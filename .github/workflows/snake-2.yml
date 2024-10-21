@@ -1,6 +1,6 @@
 name: Generate Snake
 
-# Déclencher le workflow tous les deux jours à 00:00
+# Déclenche le workflow tous les deux jours à 00:00
 on:
   schedule:
     - cron: '0 0 */2 * *'
@@ -8,17 +8,49 @@ on:
   # Vous pouvez également déclencher manuellement ce workflow via l'interface de GitHub Actions
   workflow_dispatch:
 
+permissions:
+  contents: write  # Donne les permissions nécessaires pour écrire dans le dépôt
+
 jobs:
   generate-snake:
     runs-on: ubuntu-latest
     steps:
+      # Vérifier le dépôt
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      # Créer le répertoire dist/ s'il n'existe pas déjà
+      - name: Create dist directory if it does not exist
+        run: mkdir -p dist
+
+      # Générer le snake avec l'action Platane/snk
       - uses: Platane/snk@v3
         with:
           # Nom d'utilisateur GitHub pour lire le graphique des contributions (obligatoire)
-          github_user_name: balezeauquentin
+          github_user_name: ${{ github.repository_owner }}
 
           # Liste des fichiers à générer
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+      # Lister les fichiers dans le répertoire dist pour vérifier qu'ils ont été générés
+      - name: List files in dist directory
+        run: ls -la dist/
+
+      # Option 1 : Commiter les fichiers générés dans le dépôt
+      - name: Commit and push generated files
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add dist/
+          git commit -m "Add generated snake files"
+          git push
+
+      # Option 2 : Sauvegarder les fichiers en tant qu'artefacts du workflow
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: snake-artifacts
+          path: dist/
