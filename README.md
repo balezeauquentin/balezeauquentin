@@ -31,16 +31,6 @@
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" align="center"/>
 </p>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<h3 align="center" style="font-size: 21px;">Statistics</h3>
-<div align= "center";>
-    <img align="center" width="32%" src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=balezeauquentin&theme=2077" alt="GitHub Profile Stats" />
-    <img align="center" width="32%" src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=balezeauquentin&theme=2077" alt="Most Used Languages" />
-</div>
-
-
-
-
 <div align="center">
 <a href="https://github.com/balezeauquentin">
 </div>
