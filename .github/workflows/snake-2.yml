@@ -3,7 +3,7 @@ name: Generate Snake
 # Déclenche le workflow tous les deux jours à 00:00
 on:
   schedule:
-    - cron: '0 0 */2 * *'
+    - cron: '0 2 * * *'
 
   # Vous pouvez également déclencher manuellement ce workflow via l'interface de GitHub Actions
   workflow_dispatch:
