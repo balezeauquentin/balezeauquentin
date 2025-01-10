@@ -45,9 +45,3 @@
     <img src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 </p>
-
----
-
-<!-- Section "GitHub Stats" (optionnel, tu peux enlever ou modifier) -->
-<div align="center">
-  <img src="https://github-
