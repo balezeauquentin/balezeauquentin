@@ -9,10 +9,8 @@
 
 - 🎓 I’m currently gearing up for an engineering degree at [**UTBM**](https://www.utbm.fr/)
 - 🔭 I’m currently working on [**My project**](https://github.com/balezeauquentin?tab=repositories)
+- 🌐 You can see me on my [**Website**](https://balezeau.fr)
 - 📫 How to reach me : **quentin.balezeau@utbm.fr**
-
-
-
 
 
 
