@@ -1,54 +1,117 @@
-name: Generate Snake
+name: there is a problem with its download information.
 
-# Déclenche le workflow tous les deux jours à 00:00
+Here's a possible solution to fix this issue:
+
+1 Generate Snake
+
+# Déclenche le workflow tous les deux jours. ** à 00:00
 on:
   schedule:
-    - cron: '0 2 * * *'
-  # Vous pouvez également déclencher manuellement ce workflow via l'interface de GitHub Actions
-  workflow_dispatch:
+    - cron: '0 Ensure that the `actions/upload-artifact@v3` action is correctly specified** in the workflow file.
+2. **2 * * *'
+
+  # Vous pouvez également déclencher manuellementUpdate the action version** to the latest if there is ce workflow via l'interface de GitHub Actions
+ any newer version available.
+
+Here is the corrected workflow  workflow_dispatch:
 
 permissions:
-  contents: write  # Donne les permissions nécessaires pour écrire dans le dépôt
+  contents: write  file:
+
+```yaml
+name: Generate Snake
+
+# Trigger the # Donne les permissions nécessaires pour écrire dans le workflow every two days at 00:00
+on:
+  schedule:
+ dépôt
 
 jobs:
   generate-snake:
     runs-on: ubuntu-latest
     steps:
       # Vérifier le dépôt
-      - name: Checkout the repository
+      -    - cron: '0 2 * * *'
+
+  # You can also trigger this workflow manually via the GitHub Actions interface
+  name workflow_dispatch:
+
+permissions:
+  contents: write : Checkout the repository
         uses: actions/checkout@v3
 
-      # Créer le répertoire dist/ s'il n'existe pas déjà
-      - name: Create dist directory if it does not exist
+      # Créer le répertoire dist/ s'il n # Give necessary permissions to write to the repository
+
+'existe pas déjà
+      - name: Create dist directory ifjobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+    it does not exist
         run: mkdir -p dist
 
-      # Générer le snake avec l'action Platane/snk
-      - uses: Platane/snk@v3
+      # steps:
+      # Check out the repository
+      - name: Checkout the repository
+        uses: actions/checkout Générer le snake avec l'action Platane/snk
+     @v3
+
+      # Create the dist - uses: Platane/snk@v3
         with:
-          # Nom d'utilisateur GitHub pour lire le graphique des contributions (obligatoire)
+          # Nom d'utilisateur GitHub pour lire le graphique des/ directory if it does not already exist
+      - name: Create dist directory if it does not exist
+        run: mkdir - contributions (obligatoire)
           github_user_name: ${{ github.repository_owner }}
-          # Liste des fichiers à générer
+
+          # Listep dist
+
+      # Generate the snake with the Platane des fichiers à générer
           outputs: |
             dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            dist/github/snk action
+      - uses: Platane/snk@v3
+        with:
+          # GitHub username to read the contribution graph-snake-dark.svg?palette=github-dark
+            dist (required)
+          github_user_name: ${{ github.repository/ocean.gif?color_snake=orange&color_dots=#bfd6_owner }}
 
-      # Lister les fichiers dans le répertoire dist pour vérifier qu'ils ont été générés
+          # List of files to generate
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=githubf6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+
+      # Lister les-dark
+            dist/ocean.gif?color_sn fichiers dans le répertoire dist pour vérifier qu'ils ont été générés
       - name: List files in dist directory
-        run: ls -la dist/
+        run:ake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b ls -la dist/
 
       # Option 1 : Commiter les fichiers générés dans le dépôt
-      - name: Commit and push generated files
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+     91f1,#3c7dd9
+
+      # List files in the dist directory to - name: Commit and push generated files
+        run verify they have been generated
+      - name: List files in: |
+          git config --local user.email "actions@ dist directory
+        run: ls -la dist/
+
+     github.com"
+          git config --local user.name " # Option 1: Commit the generated files to the repository
+GitHub Actions"
           git add dist/
-          git commit -m "Add generated snake files"
-          git push
+          git      - name: Commit and push generated files commit -m "Add generated snake files"
+          git
+        run: |
+          git config --local user push
 
       # Option 2 : Sauvegarder les fichiers en tant qu'artefacts du workflow
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
+.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add dist/
+          git commit -m "Add generated snake files        uses: actions/upload-artifact@v3
+       "
+          git push
+
+      # Option 2: Save the files with:
           name: snake-artifacts
-          path: dist/
+          path: as workflow artifacts
+      - name: Upload artifact dist/
