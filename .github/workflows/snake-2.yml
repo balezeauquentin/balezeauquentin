@@ -4,7 +4,6 @@ name: Generate Snake
 on:
   schedule:
     - cron: '0 2 * * *'
-
   # Vous pouvez également déclencher manuellement ce workflow via l'interface de GitHub Actions
   workflow_dispatch:
 
@@ -28,7 +27,6 @@ jobs:
         with:
           # Nom d'utilisateur GitHub pour lire le graphique des contributions (obligatoire)
           github_user_name: ${{ github.repository_owner }}
-
           # Liste des fichiers à générer
           outputs: |
             dist/github-snake.svg
@@ -50,7 +48,7 @@ jobs:
 
       # Option 2 : Sauvegarder les fichiers en tant qu'artefacts du workflow
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: snake-artifacts
           path: dist/
