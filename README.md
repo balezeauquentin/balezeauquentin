@@ -15,7 +15,7 @@
 
 - 🎓 I'm pursuing an engineering degree in Computer Science at [**UTBM**](https://www.utbm.fr/)
 - 🔭 I'm actively working on [**My project**](https://github.com/balezeauquentin?tab=repositories)
-- 🌐 Feel free to visit my [**Website**](https://balezeau.fr)
+- 🌐 Feel free to visit my [**Website**](https://quentin.balezeau.fr)
 - 📫 For any inquiries, reach me at **suitx.qb@gmail.com**
 
 ---
